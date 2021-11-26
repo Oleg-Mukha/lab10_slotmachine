@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Press+Start+2P&display=swap');
+
+body{
+	background: url(img/123.jpg);
+	background-size: 100%;
+}
+.slotMachine{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	background-color: #362703;
+	margin-top: 10%;
+	padding: 20px 15px 20px 15px;
+	width: 560px;
+	height: 590px;
+  position: relative;
+  min-width: 850px;
+  min-height: 520px;
+  color: #360303;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+}
+.slotMachine::before,
+.slotMachine::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #a87d0f, #a67108);
+  background-size: 400%;
+  border-radius: 15px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+.slotMachine::after {
+  filter: blur(20px);
+}
+@keyframes animate {
+  0%, 100% {background-position: 0 0;}
+  50% {background-position: 300% 0;}
+}
+.img{
+	padding-left: 10px;
+	float: right;
+	width: 50px;
+	height: 50px;
+}
+.coin{
+	margin-right: 10px;
+}
+ #infoboard{
+	border: 3px solid black;
+	margin-bottom: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #241313;
+	letter-spacing: 5px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 25px;
+	color: #ba9c72;
+  text-shadow: 0 -1px rgba(0,0,0,.1);
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+@-webkit-keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+ .button{
+	width: 560px;
+	margin-top: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 15px 30px;
+	color: #450f0f;
+	background-color: #821f1f;
+	font-family: 'Dosis', sans-serif;
+	font-size: 25px;
+	height: 75px;
+	border: 1px solid #38383800;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	white-space: nowrap;
+	transition: .3s linear;
+}
+.button:before, .button:after	 {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    transition: .3s linear;
+}
+.button:before {
+    left: -1px;
+    top: -1px;
+    border-left: 1px solid #c23434;
+    border-top: 1px solid #c23434;
+}
+.button:after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1px solid #c23434;
+    border-right: 1px solid #c23434;
+}
+.button:hover {
+    color: #c23434;
+		background-color: #610a0a;
+    border-color: #c23434;
+}
+.button:disabled, #borrow:disabled{
+	color: #6b6b6b;
+	background-color: #3b3b3b;
+	border-color: #000;
+}
+.info{
+ float: left;
+ border: 3px solid black;
+ margin-top: 20px;
+ padding-top: 5px;
+ padding-bottom: 3px;
+ border-radius: 5px;
+ font-family: 'Dosis', sans-serif;
+ background-color: #311d1c;
+ color: #FFFFFF;
+ text-align: center;
+ font-size: 2rem;
+ line-height: 1.5;
+}
+
+#balance{
+	padding-left: 10px;
+	width: 120px;
+}
+#spins{
+	float: left;
+	width: 100px;
+	padding-left: 10px;
+	padding-right: 5px;
+	margin-left: 230px;
+}
+#wins{
+	float: right;
+	width: 90px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.option{
+	padding-left: 5px;
+}
+
+#reels{
+	border: 3px solid #362308;
+	border-radius: 15px;
+	background-color: #966111;
+}
+#reel1, #reel2, #reel3{
+	display: inline-block;
+	margin-top: 5px;
+	background-size: 165px;
+	width: 165px;
+	height: 165px;
+	border: 2px solid #a67108;
+	border-radius: 15px;
+	box-shadow: 0px 0px 15px #3b2302;
+	background-color: #e0c9a8;
+}
+ #reel2, #reel3{
+	margin-left: 70px;
+}
+.c1{
+	background-image: url("img/cat.png");
+}
+.c2{
+	background-image: url("img/rabbit.png");
+}
+.c3{
+	background-image: url("img/panda.png");
+}
+.c4{
+	background-image: url("img/bear.png");
+}
+.c5{
+	background-image: url("img/dog.png");
+}
+.c6{
+	background-image: url("img/tiger.png");
+}
+.c7{
+	background-image: url("img/win.png");
+}
